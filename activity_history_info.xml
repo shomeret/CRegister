@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/hist_prod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Product:"
+        android:textSize="15dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline7">
+
+
+    </TextView>
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/hist_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price:"
+        android:textSize="15dp"
+
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hist_prod">
+
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/hist_pDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Purchase Date:"
+        android:textSize="15dp"
+
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hist_price">
+
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/hDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+
+
+        android:layout_marginTop="20dp"
+
+
+        android:text="Date"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/hist_pDate"
+        app:layout_constraintTop_toBottomOf="@+id/hProd">
+
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/hPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="27dp"
+        android:text="$$$"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/hist_pDate"
+        app:layout_constraintStart_toEndOf="@+id/hist_price"
+        app:layout_constraintTop_toTopOf="@+id/hist_prod"
+        app:layout_constraintVertical_bias="1.0">
+
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/hProd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="8dp"
+
+        android:text="ProdName"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/hist_prod"
+        app:layout_constraintTop_toTopOf="@+id/guideline7">
+
+
+    </TextView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.504788" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.70725036" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
